@@ -61,7 +61,7 @@ export JAVA_HOME=/usr/lib/jvm/java-openjdk
 echo $JAVA_HOME
 
 # use HTTP GET to fetch the latest Jenkins war
-wget -P "/home/ec2-user/" http://mirrors.jenkins.io/war/latest/jenkins.war
+wget -P "/home/ec2-user/" https://updates.jenkins-ci.org/latest/jenkins.war
 
 # moving a war into webapps folder will deploy the war
 mv /home/ec2-user/jenkins.war /home/ec2-user/tomcat/webapps/jenkins.war
